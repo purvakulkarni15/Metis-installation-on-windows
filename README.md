@@ -1,4 +1,4 @@
-# Metis installation on Windows: The Epic Battle Guide
+# Metis installation on Windows
 
 Before we start, make sure you’ve got these tools in your inventory:
 

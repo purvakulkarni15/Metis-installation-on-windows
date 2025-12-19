@@ -13,7 +13,7 @@ git clone https://github.com/KarypisLab/METIS.git
 git clone https://github.com/KarypisLab/GKlib.git
 ```
 
-### Tame the right hand of our beast - GKlib
+### Install GKlib
 
 1. I am no terminal nerd, so let’s do this the easy way - via CMake GUI. Set your source directory to the `GKlib` folder and create a new build directory (`GKlib-build`) to hold the cmake build files
 
@@ -35,9 +35,9 @@ git clone https://github.com/KarypisLab/GKlib.git
    - Drag and drop all the header files from the `GKlib` directory into `include` folder.
    - Copy `GKlib.lib` from `GKlib-build/Release/` into the `lib` folder.
 
-And just like that, GKlib is tamed and ready to serve!
+And just like that, GKlib is ready to serve!
 
-### Tame the Beast – Metis
+### Install Metis
 
 1. Before even thinking about touching CMake, run that `vsgen.bat` file lurking in the Metis directory. It’ll prepare some directories that cmake needs.
 
@@ -51,7 +51,7 @@ And just like that, GKlib is tamed and ready to serve!
 
 4. Once those flags are in place, hit `Configure`, choose your Visual Studio version, and `Generate` the files.
 
-5. If the build screams at you about `mpmetis.c:191`, `gpmetis.c:242`, or `ndmetis.c:175`, it’s time to show it who’s boss. Change `#ifndef MACOS` to `#if !defined(MACOS) && !defined(WIN32)`. No more complaints after this!
+5. If the build screams at you about `mpmetis.c:191`, `gpmetis.c:242`, or `ndmetis.c:175`, change `#ifndef MACOS` to `#if !defined(MACOS) && !defined(WIN32)`. No more complaints after this!
 
 6. With the errors squashed, command Visual Studio to build the Metis project.
 
@@ -65,6 +65,4 @@ And just like that, GKlib is tamed and ready to serve!
    - Drop all Metis header files into `include`.
    - Copy `metis.lib` from `METIS-build/Release/` and stash it in `lib`.
 
-## Victory!
-
-Congratulations! You’ve successfully installed Metis on Windows and lived to tell the tale. Your GKlib and Metis libraries are ready to rock. Now go forth and conquer your projects with these mighty tools in hand!
+Congratulations! You’ve successfully installed Metis on Window. Your GKlib and Metis libraries are ready to rock.

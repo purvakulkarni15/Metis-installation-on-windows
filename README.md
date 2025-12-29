@@ -17,7 +17,7 @@ git clone https://github.com/KarypisLab/GKlib.git
 
 1. I am no terminal nerd, so let’s do this the easy way - via CMake GUI. Set your source directory to the `GKlib` folder and create a new build directory (`GKlib-build`) to hold the cmake build files
 
-2. Hit the `Configure` button and let CMake do its thing. When it asks for your Visual Studio version, make sure you don’t accidentally choose the wrong one—this is no time for mindless fumbles.
+2. Hit the `Configure` button and let CMake do its thing. When it asks for your Visual Studio version, make sure you don’t accidentally choose the wrong one. This is no time for mindless fumbles.
 
 3. With configuration done, click `Generate`. This will prepare your solution files for the next step.
 
